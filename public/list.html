@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="/public/normalize.css" />
+    <!-- main  -->
+    <link rel="stylesheet" href="/public/main.css" />
+
+    <title>Edit List</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="single-list-form">
+        <h4>Edit List</h4>
+        <div class="form-control">
+          <label>List ID</label>
+          <p class="task-list-edit-id"></p>
+        </div>
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="task-list-edit-name" minlength="2" maxlength="12" />
+        </div>
+        <button type="submit" class="block btn task-list-edit-btn">edit</button>
+        <div class="form-alert"></div>
+      </form>
+      <a href="home.html" class="btn back-link">back to lists</a>
+    </div>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- js -->
+    <script src="/public/edit-list.js"></script>
+  </body>
+</html>
