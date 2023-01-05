@@ -37,3 +37,14 @@ npm insall
 npm run strat
 ```
 
+## :bulb: Setup .env (Optional)
+create a .env file in the root directory and add these variables:
+```
+# database
+MONGO_URL = Your mongodb url
+DB_NAME = Set a name for the database
+
+# server
+PORT = Set a port for the server (e.g. 3000)
+HOST = Set a host for the server (e.g. localhost)
+```
