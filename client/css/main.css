@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  background-image: url("/public/background.jpg");
+  background-image: url("/client/img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--textColor);

@@ -5,36 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- normalize -->
-    <link rel="stylesheet" href="/public/normalize.css" />
+    <link rel="stylesheet" href="/client/css/normalize.css" />
     <!-- main  -->
-    <link rel="stylesheet" href="/public/main.css" />
+    <link rel="stylesheet" href="/client/css/main.css" />
 
-    <title>Edit Task</title>
+    <title>Edit List</title>
   </head>
   <body>
     <div class="container">
-      <form class="single-task-form">
-        <h4>Edit Task</h4>
+      <form class="single-list-form">
+        <h4>Edit List</h4>
         <div class="form-control">
-          <label>Task ID</label>
+          <label>List ID</label>
           <p class="task-list-edit-id"></p>
         </div>
         <div class="form-control">
-          <label for="date">Date</label>
-          <input type="date" name="date" class="task-list-edit-date" min="2019-01-01"/>
-        </div>
-        <div class="form-control">
           <label for="name">Name</label>
-          <input type="text" name="name" class="task-list-edit-name" minlength="2" maxlength="12"/>
-        </div>
-        <div class="form-control">
-          <label for="completed">completed</label>
-          <input type="checkbox" name="completed" class="task-edit-completed" />
+          <input type="text" name="name" class="task-list-edit-name" maxlength="12" />
         </div>
         <button type="submit" class="block btn task-list-edit-btn">edit</button>
         <div class="form-alert"></div>
       </form>
-      <a href="" class="btn back-link" id="back-link">back to list</a>
+      <a href="home.html" class="btn back-link">back to lists</a>
     </div>
     <!-- axios -->
     <script
@@ -44,6 +36,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- js -->
-    <script src="/public/edit-task.js"></script>
+    <script src="/client/js/edit-list.js"></script>
   </body>
 </html>

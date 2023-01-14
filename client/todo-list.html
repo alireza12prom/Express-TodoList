@@ -10,9 +10,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <!-- normalize css -->
-    <link rel="stylesheet" href="/public/normalize.css"/>
+    <link rel="stylesheet" href="/client/css/normalize.css"/>
     <!-- main css -->
-    <link rel="stylesheet" href="/public/main.css" />
+    <link rel="stylesheet" href="/client/css/main.css" />
     <title>Task Manager</title>
   </head>
   <body>
@@ -24,7 +24,6 @@
           name="name"
           class="task-input"
           placeholder="e.g. wash dishes"
-          minlength="2"
           maxlength="12"
           id = "task-name"
         />
@@ -45,7 +44,7 @@
       <p class="loading-text">Loading...</p>
       <div class="tasks-lists"></div>
     </section>
-    <a href="/" class="btn back-link">back to home</a>
+    <a href="./home.html" class="btn back-link">back to home</a>
     <!-- axios -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
@@ -53,6 +52,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="/public/browser-tasks.js"></script>
+    <script src="/client/js/browser-tasks.js"></script>
   </body>
 </html>
