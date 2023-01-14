@@ -1,0 +1,9 @@
+{
+    "development" : {
+        "env":"dev",
+        "host":"localhost",
+        "port":"3000"
+    },
+    "test" : {},
+    "production" : {}
+}

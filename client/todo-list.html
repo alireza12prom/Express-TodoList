@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="/client/css/normalize.css"/>
+    <!-- main css -->
+    <link rel="stylesheet" href="/client/css/main.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <form class="task-form">
+      <h4 id="list-name"></h4>
+      <div class="form-control">
+        <input
+          type="text"
+          name="name"
+          class="task-input"
+          placeholder="e.g. wash dishes"
+          maxlength="12"
+          id = "task-name"
+        />
+      </div>
+      <div class="form-control">
+        <input
+        type="date"
+        name="date"
+        class="task-input"
+        min="2019-01-01"
+        id = "task-date"
+        />
+      </div>
+      <button type="submit" class="btn submit-btn-create-task">submit</button>
+      <div class="form-alert"></div>
+    </form>
+    <section class="tasks-lists-container">
+      <p class="loading-text">Loading...</p>
+      <div class="tasks-lists"></div>
+    </section>
+    <a href="./home.html" class="btn back-link">back to home</a>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/client/js/browser-tasks.js"></script>
+  </body>
+</html>
